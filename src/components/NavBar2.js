@@ -45,9 +45,9 @@ export default function NavBar2() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white">
-              Product
+          <Popover className="relative border-r-[1px] border-zinc-500 pr-8">
+            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white border-none outline-none">
+              SHOP CATEGORIES
               <ChevronDownIcon className="h-5 w-5 flex-none text-white" aria-hidden="true" />
             </Popover.Button>
 
@@ -97,13 +97,16 @@ export default function NavBar2() {
           </Popover>
 
           <a href="/" className="text-sm font-semibold leading-6 text-white">
-            Features
+            HOME
           </a>
           <a href="/" className="text-sm font-semibold leading-6 text-white">
-            Marketplace
+            OUR STORE
           </a>
           <a href="/" className="text-sm font-semibold leading-6 text-white">
-            Company
+            BLOGS
+          </a>
+          <a href="/" className="text-sm font-semibold leading-6 text-white">
+            CONTACT
           </a>
         </Popover.Group>
         {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -119,14 +122,7 @@ export default function NavBar2() {
           className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
         >
           <div className="flex items-center justify-between">
-            <a href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
-            </a>
+<p className='text-xl font-bold text-indigo-600'>ChimaUX</p>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -143,7 +139,7 @@ export default function NavBar2() {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex text-gray-700  w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50">
-                        Product
+                       SHOP CATEGORIES
                         <ChevronDownIcon
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
                           aria-hidden="true"
@@ -168,19 +164,25 @@ export default function NavBar2() {
                   href="/"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50"
                 >
-                  Features
+                  HOME
                 </a>
                 <a
                   href="/"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50"
                 >
-                  Marketplace
+                  OUR STORE
                 </a>
                 <a
                   href="/"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50"
                 >
-                  Company
+                  BLOGS
+                </a>
+                <a
+                  href="/"
+                  className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50"
+                >
+                  CONTACT
                 </a>
               </div>
         
